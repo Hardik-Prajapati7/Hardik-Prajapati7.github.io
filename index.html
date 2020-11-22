@@ -566,6 +566,7 @@ function showResponse(){
           </div>
           <div class="copyright mt-1">
             <p>© 2020 . All Rights Reserved | Design by <a href="index.html">Hardik Prajapati</a></p>
+            <h1 id="count">0</h1>
           </div>
         </div>
       </div>
@@ -666,3 +667,18 @@ function showResponse(){
 </body>
 
 </html>
+<script type="text/javascript">
+	const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/florin-popcom/codepen/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+}
+
+
+</script>
