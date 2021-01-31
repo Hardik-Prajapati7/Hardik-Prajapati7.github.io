@@ -9852,7 +9852,13 @@ h3.global-white {
     border: 1px solid red;
     border-radius: 5px;
     
- }
+ }.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+* {box-sizing:border-box}
 
 @media (max-width: 992px) {
   .w3l-main-banner h3.gallery4-head {
